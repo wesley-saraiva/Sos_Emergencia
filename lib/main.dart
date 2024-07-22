@@ -1,12 +1,14 @@
 import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
+import 'package:torch_controller/torch_controller.dart';
 
 import 'src/src/core/bindings/application_binding.dart';
 import 'src/src/feature/home/home_module.dart';
 import 'src/src/feature/splash/splash_module.dart';
 
 void main() {
+  TorchController().initialize();
   runApp(const MyApp());
 }
 
